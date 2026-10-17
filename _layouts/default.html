@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'pt-BR' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0c1c35">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | relative_url }}">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} - início">
+          <img src="{{ '/assets/images/logo-smart-care.png' | relative_url }}" alt="">
+          <span>SMART <b>CARE</b></span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="{{ '/' | relative_url }}">Início</a>
+          <a href="{{ '/sobre/' | relative_url }}">Sobre</a>
+          <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo" class="site-main">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p><strong>Smart Care</strong> — conhecimento que circula.</p>
+        <div class="footer-links">
+          <a href="https://wa.me/{{ site.whatsapp }}?text=Ol%C3%A1%21%20Quero%20participar%20da%20comunidade%20Smart%20Care%20e%20trocar%20ideias%20sobre%20inform%C3%A1tica." target="_blank" rel="noopener noreferrer">Conversa pelo WhatsApp: (19) 98182-1478</a>
+          <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">@{{ site.instagram }} no Instagram</a>
+          <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

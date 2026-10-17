@@ -1,0 +1,22 @@
+title: Smart Care — Comunidade
+description: "Comunidade para técnicos, entusiastas e curiosos trocarem conhecimento sobre computadores e softwares."
+url: "https://wagnersdoliveira.github.io"
+baseurl: "/smart-care-blog"
+lang: pt-BR
+timezone: America/Sao_Paulo
+permalink: /blog/:title/
+whatsapp: "5519981821478"
+instagram: "smartcare.campinas"
+
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

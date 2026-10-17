@@ -1,0 +1,67 @@
+---
+layout: default
+title: Início
+---
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-copy-block">
+      <p class="eyebrow">CONHECIMENTO COMPARTILHADO</p>
+      <h1>Conhecimento técnico <span>se fortalece em comunidade.</span></h1>
+      <p class="hero-copy">Um espaço para técnicos, entusiastas e curiosos trocarem informações, compartilhar soluções e aprender sobre computadores e softwares.</p>
+      <div class="hero-actions">
+        <a class="button" href="#artigos">Ler e compartilhar <span aria-hidden="true">↓</span></a>
+        <a class="hero-contact" href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Participe no Instagram ↗</a>
+      </div>
+    </div>
+    <figure class="hero-photo">
+      <img src="{{ '/assets/images/computer-repair.jpg' | relative_url }}" alt="Técnico realizando manutenção em um computador">
+      <figcaption>
+        Foto: Vintechcomputerservices /
+        <a href="https://commons.wikimedia.org/wiki/File:Computer_repair_in_progress.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>
+        · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="hero-glow" aria-hidden="true"></div>
+</section>
+
+<section class="container articles-section" id="artigos">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">GUIAS E DICAS</p>
+      <h2>Artigos recentes</h2>
+    </div>
+    <p>Guias, experiências e conversas técnicas para quem trabalha com informática ou gosta de descobrir como a tecnologia funciona.</p>
+  </div>
+  <div class="article-grid">
+    {% for post in site.posts %}
+      <article class="article-card">
+        {% if post.image %}
+          <a class="card-photo" href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.image_alt | escape }}">
+          </a>
+        {% endif %}
+        <p class="eyebrow">{{ post.category | default: "Tecnologia prática" }}</p>
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+        <p>{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+        {% if post.image %}
+          <p class="card-credit">Imagem: {{ post.image_credit | escape }} · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a></p>
+        {% endif %}
+        <div class="card-footer">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d/%m/%Y" }}</time>
+          <a href="{{ post.url | relative_url }}" aria-label="Ler {{ post.title | escape }}">Ler artigo <span aria-hidden="true">↗</span></a>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="about-strip">
+  <div class="container about-strip-inner">
+    <div>
+      <p class="eyebrow">COMUNIDADE SMART CARE</p>
+      <h2>Conhecimento compartilhado conecta quem trabalha com tecnologia e quem quer aprender.</h2>
+    </div>
+    <a class="button button-light" href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Continue a conversa <span aria-hidden="true">↗</span></a>
+  </div>
+</section>

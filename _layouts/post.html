@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<article class="container article">
+  <a class="back-link" href="{{ '/' | relative_url }}">← Voltar ao início</a>
+  <header class="article-header">
+    <p class="eyebrow">{{ page.category | default: "Tecnologia prática" }}</p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="article-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d/%m/%Y" }}</time>
+      {% if page.reading_time %}<span>· {{ page.reading_time }} min de leitura</span>{% endif %}
+    </p>
+    {% if page.description %}<p class="article-description">{{ page.description }}</p>{% endif %}
+    {% if page.image %}
+      <figure class="article-photo">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
+        <figcaption>
+          {{ page.image_caption | escape }} —
+          <a href="{{ page.image_source }}" target="_blank" rel="noopener noreferrer">{{ page.image_credit | escape }}</a>,
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
+        </figcaption>
+      </figure>
+    {% endif %}
+  </header>
+  <div class="article-content">
+    {{ content }}
+  </div>
+  <aside class="community-invite">
+    <p class="eyebrow">A CONVERSA CONTINUA</p>
+    <h2>Tem outra dica ou uma experiência para compartilhar?</h2>
+    <p>Troque conhecimento com técnicos, entusiastas e curiosos da comunidade Smart Care.</p>
+    <div class="community-links">
+      <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Compartilhar no Instagram ↗</a>
+      <a href="https://wa.me/{{ site.whatsapp }}?text=Ol%C3%A1%21%20Quero%20compartilhar%20uma%20dica%20com%20a%20comunidade%20Smart%20Care." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp ↗</a>
+    </div>
+  </aside>
+</article>
