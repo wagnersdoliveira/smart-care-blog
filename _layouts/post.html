@@ -14,11 +14,11 @@ layout: default
     {% if page.image %}
       <figure class="article-photo">
         <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | escape }}">
-        <figcaption>
+        {% if page.image_credit %}<figcaption>
           {{ page.image_caption | escape }} —
           <a href="{{ page.image_source }}" target="_blank" rel="noopener noreferrer">{{ page.image_credit | escape }}</a>,
           <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.
-        </figcaption>
+        </figcaption>{% endif %}
       </figure>
     {% endif %}
   </header>
@@ -26,12 +26,12 @@ layout: default
     {{ content }}
   </div>
   <aside class="community-invite">
-    <p class="eyebrow">A CONVERSA CONTINUA</p>
-    <h2>Tem outra dica ou uma experiência para compartilhar?</h2>
-    <p>Troque conhecimento com técnicos, entusiastas e curiosos da comunidade Smart Care.</p>
+    <p class="eyebrow">NÃO CONSEGUIU RESOLVER?</p>
+    <h2>A Smart Care resolve para você.</h2>
+    <p>Suporte para computador, notebook e Mac: formatação, otimização, backup, rede e impressora. Atendimento remoto ou em Campinas e região. Conte o problema e receba um orçamento sem compromisso.</p>
     <div class="community-links">
-      <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Compartilhar no Instagram ↗</a>
-      <a href="https://wa.me/{{ site.whatsapp }}?text=Ol%C3%A1%21%20Quero%20compartilhar%20uma%20dica%20com%20a%20comunidade%20Smart%20Care." target="_blank" rel="noopener noreferrer">Conversar pelo WhatsApp ↗</a>
+      <a href="https://wa.me/{{ site.whatsapp }}?text={{ 'Olá! Li o artigo "' | append: page.title | append: '" no blog da Smart Care e preciso de ajuda.' | url_encode }}" target="_blank" rel="noopener noreferrer">Pedir orçamento no WhatsApp ↗</a>
+      <a href="https://www.instagram.com/{{ site.instagram }}/" target="_blank" rel="noopener noreferrer">Mais dicas no Instagram ↗</a>
     </div>
   </aside>
 </article>
