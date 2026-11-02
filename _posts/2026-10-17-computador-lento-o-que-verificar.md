@@ -5,11 +5,8 @@ date: 2026-10-17
 category: Solução de problemas
 description: "Uma sequência segura para investigar lentidão no Windows sem recorrer a programas milagrosos."
 reading_time: 5
-image: /assets/images/laptop-maintenance.jpg
-image_alt: "Área organizada para manutenção de um notebook"
-image_caption: "Área preparada para manutenção de notebook"
-image_credit: "Giorgio Malvone"
-image_source: "https://commons.wikimedia.org/wiki/File:Laptop_Maintenance_Work_Area.jpg"
+image: /assets/images/capas/capa-computador-lento.jpg
+image_alt: "Capa: computador lento, comece por aqui"
 ---
 
 Quando o computador fica lento, é tentador instalar um “otimizador”. Antes disso, vale observar o que está acontecendo e investigar uma causa por vez.

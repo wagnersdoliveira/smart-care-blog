@@ -5,11 +5,8 @@ date: 2026-10-17
 category: Manutenção
 description: "Consulte informações do sistema e do disco sem alterar arquivos ou configurações."
 reading_time: 3
-image: /assets/images/computer-repair.jpg
-image_alt: "Técnico realizando manutenção em um computador"
-image_caption: "Manutenção de computador"
-image_credit: "Vintechcomputerservices"
-image_source: "https://commons.wikimedia.org/wiki/File:Computer_repair_in_progress.jpg"
+image: /assets/images/capas/capa-diagnostico-powershell.jpg
+image_alt: "Capa: diagnóstico do Windows"
 ---
 
 Antes de procurar uma melhoria para o computador, é útil conhecer alguns dados básicos. Este exemplo apenas consulta informações: não instala programas, altera configurações ou apaga arquivos.

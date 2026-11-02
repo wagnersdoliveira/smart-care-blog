@@ -5,6 +5,8 @@ date: 2026-10-17
 category: Solução de problemas
 description: "Encontre o que ocupa espaço e use as ferramentas do Windows sem apagar arquivos importantes por engano."
 reading_time: 4
+image: /assets/images/capas/capa-pouco-espaco-no-disco.jpg
+image_alt: "Capa: disco cheio, libere com segurança"
 ---
 
 Quando o disco está quase cheio, atualizações e aplicativos podem falhar. Antes de apagar qualquer coisa, confira quanto espaço está disponível e identifique o que está ocupando o disco.

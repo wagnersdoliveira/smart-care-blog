@@ -5,11 +5,8 @@ date: 2026-10-17
 category: Softwares
 description: "Use o Gerenciador de Pacotes do Windows para verificar atualizações antes de instalar."
 reading_time: 4
-image: /assets/images/laptop-maintenance.jpg
-image_alt: "Área de trabalho preparada para manutenção de um notebook"
-image_caption: "Área preparada para manutenção de notebook"
-image_credit: "Giorgio Malvone"
-image_source: "https://commons.wikimedia.org/wiki/File:Laptop_Maintenance_Work_Area.jpg"
+image: /assets/images/capas/capa-atualizar-programas.jpg
+image_alt: "Capa: programas sempre atualizados"
 ---
 
 Manter os programas atualizados ajuda a receber correções e melhorias. No Windows, o `winget` pode procurar atualizações disponíveis para muitos aplicativos.
